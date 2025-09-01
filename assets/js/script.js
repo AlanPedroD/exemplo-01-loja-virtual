@@ -123,7 +123,7 @@ function finalizarCompraWhatsApp() {
   const total = cart.reduce((sum, item) => sum + item.preco * item.quantidade, 0);
   mensagem += `Total: R$ ${total.toFixed(2)}`;
 
-  const numero = "5582996429077"; // substitua pelo número da loja
+  const numero = "559999999999"; // substitua pelo número da loja
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
   window.open(url, "_blank");
 
